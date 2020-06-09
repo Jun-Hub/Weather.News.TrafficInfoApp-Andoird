@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="회 원 가 입"
+            android:layout_marginTop="30dp"
+            android:textSize="40sp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/color_MAIN" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="30dp">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="아이디 : "
+                android:textSize="13sp"/>
+            <EditText
+                android:id="@+id/user_id"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:hint=""
+                />
+        </LinearLayout>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:text="중복확인"
+            android:id="@+id/button"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="이름 : "
+                android:textSize="13sp"/>
+            <EditText
+                android:id="@+id/user_name"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:hint=""
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="비밀번호 : "
+                android:textSize="13sp"/>
+            <EditText
+                android:id="@+id/user_passWord"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:inputType="textPassword"
+                android:hint=""
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="비밀번호 확인 : "
+                android:textSize="13sp"/>
+            <EditText
+                android:id="@+id/user_passWordAgain"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:inputType="textPassword"
+                android:hint=""
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="핸드폰번호 : "
+                android:textSize="13sp"/>
+            <EditText
+                android:id="@+id/user_Phone"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:inputType="phone"
+                />
+
+        </LinearLayout>
+
+
+        CheckBox
+            android:id="@+id/personalInfo"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:text="Do you agree to the Terms of use and privacy?"/>
+        <Button
+            android:id="@+id/btn_agreeJoin"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="30dp"
+            android:text="가 입 하 기"
+            android:textSize="15sp"
+            android:onClick="onClick"
+            android:background="#7c94ff"/>
+    </LinearLayout>
+</ScrollView>

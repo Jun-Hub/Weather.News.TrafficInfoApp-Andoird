@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        class="com.google.android.gms.maps.MapFragment"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+
+        android:textSize="18sp"
+        android:text="보행자 무단횡단사고 다발지역(13~15년)"/>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="300dp"
+        android:layout_height="170dp"
+        android:background="#b0ff3e3e"
+        android:id="@+id/scroll"
+        android:layout_above="@+id/asd"
+
+        android:layout_centerHorizontal="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:typeface="sans"
+                android:textSize="18dp"
+                android:text="다발지역 위치 : " />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:typeface="monospace"
+                android:textStyle="bold"
+                android:id="@+id/spotname"
+                android:textSize="18dp"
+                android:text="서울특별시" />
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:typeface="sans"
+                    android:textSize="18dp"
+                    android:text="관할 경찰서 : " />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:typeface="monospace"
+                    android:textStyle="bold"
+                    android:id="@+id/spot"
+                    android:textSize="18dp"
+                    android:text="분당경찰서" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:typeface="sans"
+                    android:textSize="18dp"
+                    android:text="발생건수 : " />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:typeface="monospace"
+                    android:textStyle="bold"
+                    android:id="@+id/occr"
+                    android:textSize="18dp"
+                    android:text="서울특별시" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:typeface="sans"
+                    android:textSize="18dp"
+                    android:text="사상자수 : " />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:typeface="monospace"
+                    android:textStyle="bold"
+                    android:id="@+id/dthi"
+                    android:textSize="18dp"
+                    android:text="서울특별시" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:typeface="sans"
+                    android:id="@+id/dateText2"
+                    android:textSize="18dp"
+                    android:text="사망자수 : " />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:typeface="monospace"
+                    android:textStyle="bold"
+                    android:id="@+id/death"
+                    android:textSize="18dp"
+                    android:text="서울특별시" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:typeface="sans"
+                    android:textSize="18dp"
+                    android:text="중상자수 : " />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:typeface="monospace"
+                    android:textStyle="bold"
+                    android:id="@+id/seri"
+                    android:textSize="18dp"
+                    android:text="서울특별시" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:typeface="sans"
+                    android:textSize="18dp"
+                    android:text="경상자수 : " />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:typeface="monospace"
+                    android:textStyle="bold"
+                    android:id="@+id/ordn"
+                    android:textSize="18dp"
+                    android:text="서울특별시" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:typeface="sans"
+                    android:textSize="18dp"
+                    android:text="부상신고자수 : " />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:typeface="monospace"
+                    android:textStyle="bold"
+                    android:id="@+id/inj"
+                    android:textSize="18dp"
+                    android:text="서울특별시" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/asd"
+        android:layout_height="50dp" />
+
+
+
+</RelativeLayout>
+
+

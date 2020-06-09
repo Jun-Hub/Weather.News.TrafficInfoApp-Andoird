@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="설 정"
+        android:id="@+id/textView"
+        android:textSize="40sp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal" />
+
+    <Switch
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="잠금화면에 현재날씨 표시하기"
+        android:textOn="설정"
+        android:textOff="해제"
+        android:textSize="18sp"
+        android:id="@+id/switch1"
+        android:layout_gravity="center_horizontal" />
+
+    <Switch
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="내 위치 근처에 보행자 사고 다발지역 있을 경우 알림"
+        android:textOn="설정"
+        android:textOff="해제"
+        android:textSize="18sp"
+        android:id="@+id/switch2"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="오전 9시 22분"
+            android:textSize="20sp"
+            android:id="@+id/timeBtn"
+            android:textColor="@color/colorAccent"
+            android:background="#f0e589"
+            android:layout_gravity="center_horizontal" />
+
+    <Switch
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="마다 매일 미세먼지 알림"
+        android:textOn="설정"
+        android:textOff="해제"
+        android:textSize="18sp"
+        android:id="@+id/switch3"
+        android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+
+</LinearLayout>

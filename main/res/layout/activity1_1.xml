@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    android:background="#16599f"
+    android:id="@+id/linearLayout"
+    tools:context=".Activity1_1" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/time"
+        android:text="time"
+        android:textSize="70sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/time2"
+        android:text="time"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:typeface="sans"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/weatherIconImageView"
+        android:src="@drawable/icon_30"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/temperature"
+        android:id="@+id/temperatureTextView"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="28dp"
+        android:typeface="serif" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/condition"
+        android:layout_marginTop="15dp"
+        android:id="@+id/conditionTextView"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/location"
+        android:layout_marginTop="10dp"
+        android:id="@+id/locationTextView"
+        android:layout_gravity="center"
+        android:textStyle="bold" />
+
+    TextView
+    android:id="@+id/textView1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="GPS 에 수신된 현재위치"
+    android:layout_below="@+id/locationTextView"
+    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    TextView
+    android:id="@+id/textView2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/textView1"
+    android:text="결과창"
+    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/updateButton"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/updating"
+        android:layout_gravity="center"
+        android:background="#00ff0000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="미세먼지 49µg [보통]"
+        android:layout_marginTop="25dp"
+        android:textSize="17sp"
+        android:textColor="#c8a564"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="화면을 밀어서 잠금해제 >>"
+        android:textSize="17sp"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
