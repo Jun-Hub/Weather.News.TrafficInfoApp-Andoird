@@ -1,2 +1,9 @@
 # Weather.News.TrafficInfoApp-Andoird
-get multiple Information with this appℹ️
+
+Demo Link
+-----------------------------------------
+https://youtu.be/DBO-WGxnnAs
+
+App Info
+-------------------------------------------
+get multiple useful Information with this appℹ️
